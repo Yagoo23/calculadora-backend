@@ -23,7 +23,7 @@ jobs:
         pip install httpx
     
     - name: Ejecutar pruebas con Pytest
-      run: pytest
+      run: coverage run -m pytest -v -s
     
     - name: Ejecutar Ruff
       run: ruff check .
