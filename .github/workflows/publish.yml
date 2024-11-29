@@ -67,5 +67,5 @@ jobs:
           uses: docker/build-push-action@v6
           with:
             push: true
-            tags: ghcr.io/Yagoo23/calculadora-backend
+            tags: ghcr.io/yagoo23/calculadora-backend
 
