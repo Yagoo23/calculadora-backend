@@ -49,7 +49,7 @@ jobs:
     - name: Ejecutar Ruff
       run: ruff check
 
-   build-and-push-github-package:
+  build-and-push-github-package:
       runs-on: ubuntu-latest
       steps:
         - 
