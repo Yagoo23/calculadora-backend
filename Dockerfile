@@ -1,6 +1,8 @@
 # Usamos una imagen base de Python
 FROM python:3.11
 
+LABEL org.opencontainers.image.source https://github.com/yagoo23/calculadora-backend
+
 # Establecemos el directorio de trabajo en el contenedor
 WORKDIR /app
 
