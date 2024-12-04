@@ -51,22 +51,22 @@ CMD ["java", "-jar", "app.jar"]
 # Construcción y Ejecución con Docker
 Paso 1: Construir la Imagen
 Ejecuta el siguiente comando para construir la imagen Docker:
-```
+
 bash
+```
 docker build -t mi-proyecto .
 ```
 
 Paso 2: Ejecutar el Contenedor
 Corre el contenedor con:
-```
 bash
+```
 docker run -p 8080:8080 mi-proyecto
 ```
 
 Paso 3: Subir a DockerHub (Opcional)
 Si quieres subir la imagen a DockerHub, autentícate y realiza el push:
-```
-bash
+```bash
 docker tag mi-proyecto usuario/mi-proyecto
 docker push usuario/mi-proyecto
 ```
@@ -74,8 +74,9 @@ docker push usuario/mi-proyecto
 # Configuración de GitHub Actions
 El pipeline automatiza la compilación, pruebas, creación del artefacto .jar y generación de la imagen Docker.
 Aquí está el archivo .github/workflows/build-and-test.yml:
-```
+
 text
+```
 name: Build, Test, and Package with Docker
 
 on:
